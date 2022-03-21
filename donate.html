@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>home of wo80 - donation options</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="home of wo80 - donation options">
+	<meta name="keywords" content="wo80, support, donation, paypal, bitcoin, ethereum, zcash">
+	<meta name="author" content="wo80">
+</head>
+<style>
+
+body {
+	font: normal 11pt "Open Sans",Calibri,sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color: black;
+	background: white;
+}
+
+input, button {
+	font-family: inherit;
+	font-size: 0.9em;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 15px 5px;
+}
+
+p {
+	margin: 5px;
+}
+
+.center {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.card {
+	margin: 20px;
+	padding: 0;
+	background: #fcfcfc;
+}
+
+.header {
+	background: #eee;
+	color: #999;
+	font-size: 1.3em;
+	font-weight: 300;
+	padding: 5px;
+}
+
+.content {
+	padding: 5px;
+}
+
+.qr > img {
+	display: none;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+}
+
+.item {
+	padding: 0.5em;
+}
+
+.item-center {
+	flex-grow: 1; /* Set the middle element to grow and stretch */
+}
+
+.item + .item {
+	margin-left: 2%;
+}
+
+.item > label {
+	display: block;
+	font-weight: 300;
+	padding: 5px;
+}
+
+.item > input {
+	width: 100%;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.item > input:focus {
+	outline-color: transparent;
+	outline-style:solid;
+	border-color: #06f;
+}
+
+button {
+	background-color: #eee;
+	color: #000;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	padding: 5px;
+	min-width: 100px;
+}
+
+button:hover {
+	background-color: #ccc;
+	border-color: #ccc;
+}
+
+button:focus {
+	outline-color: transparent;
+	outline-style:solid;
+	border-color: #ccc;
+}
+
+button:active {
+	background-color: #bdf;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #ddd;
+  background-color: #eee;
+  color: #ccc;
+}
+
+</style>
+<body>
+
+<div class="center">
+
+<h1>donation options</h1>
+
+<p>Thank you for considering a donation. Any support is highly appreciated and will help me maintaining my open source projects.</p>
+<div class="card">
+	<div class="header">paypal ( EUR/USD )</div>
+	<div class="content">
+	<p>
+	<a href="https://www.paypal.me/cwoltering">https://www.paypal.me/cwoltering</a>
+	</p>
+	</div>
+</div>
+
+<div class="card">
+	<div class="header">ko-fi ( USD via paypal )</div>
+	<div class="content">
+	<p>
+	<a href="https://ko-fi.com/cwoltering">https://ko-fi.com/cwoltering</a>
+	</p>
+	</div>
+</div>
+
+<div class="card">
+	<div class="header">liberapay ( EUR via paypal )</div>
+	<div class="content">
+	<p>
+	<a href="https://liberapay.com/cwoltering">https://liberapay.com/cwoltering</a>
+	</p>
+	</div>
+</div>
+
+<div class="card">
+	<div class="header">buymeacoffee ( USD via paypal )</div>
+	<div class="content">
+	<p>
+	<a href="https://www.buymeacoffee.com/cwoltering">https://www.buymeacoffee.com/cwoltering</a>
+	</p>
+	</div>
+</div>
+
+<div class="card">
+	<div class="header">bitcoin</div>
+	<div class="content flex">
+		<div class="item"><label for="BTC">BTC</label></div>
+		<div class="item item-center"><input type="text" name="BTC" id="BTC" value="3CigyXGt1jX39HMbT1aEP6ngyfQd5ScNnh" /></div>
+		<div class="item"><button class="copy">Copy</button></div>
+		<div class="item"><button class="qr">QR Code</button></div>
+	</div>
+	<div class="qr">
+		<img src="img/crypto-qr-bitcoin.png" />
+	</div>
+</div>
+
+<div class="card">
+	<div class="header">ethereum</div>
+	<div class="content flex">
+		<div class="item"><label for="ETH">ETH</label></div>
+		<div class="item item-center"><input type="text" name="ETH" id="ETH" value="0x89EA7A9F5D40E66dB24ccf4087e8A86aba488094" /></div>
+		<div class="item"><button class="copy">Copy</button></div>
+		<div class="item"><button class="qr">QR Code</button></div>
+	</div>
+	<div class="qr">
+		<img src="img/crypto-qr-ether.png" />
+	</div>
+</div>
+
+<div class="card">
+	<div class="header">zcash</div>
+	<div class="content flex">
+		<div class="item"><label for="ZEC">ZEC</label></div>
+		<div class="item item-center"><input type="text" name="ZEC" id="ZEC" value="zs1mq58zlvgmtyq5hv9qne4y9ketncesdkqwe6nzppt2q3xw0yus7m9tezuf29psmxn0klfgwlyr56" /></div>
+		<div class="item"><button class="copy">Copy</button></div>
+		<div class="item"><button class="qr">QR Code</button></div>
+	</div>
+	<div class="qr">
+		<img src="img/crypto-qr-zcash.png" />
+	</div>
+</div>
+
+</div>
+
+<script>
+
+function copy(b) {
+  let input = b.closest(".content").querySelector('input');
+  if (navigator.clipboard && input) {
+    navigator.clipboard.writeText(input.value);
+  }
+}
+
+function qr(b) {
+  let img = b.closest(".card").querySelector('img');
+
+  if (!img) return;
+
+  let hidden = img.style.display != 'block';
+
+  document.querySelectorAll('.qr > img').forEach(i => {
+    i.style.display = 'none';
+  });
+
+  if (hidden) {
+    img.style.display = 'block';
+  }
+}
+
+// Clipboars API only available on secure hosts.
+let http = window.location.protocol.startsWith('http:');
+
+document.querySelectorAll('button.copy').forEach(b => {
+  b.addEventListener('click', () => copy(b));
+  if (http) b.disabled = true;
+});
+
+document.querySelectorAll('button.qr').forEach(b => {
+  b.addEventListener('click', () => qr(b));
+});
+
+</script>
+
+</body>
+</html>
